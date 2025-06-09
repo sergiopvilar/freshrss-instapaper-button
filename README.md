@@ -1,3 +1,12 @@
+# [Pocket is shutting down ...](https://support.mozilla.org/en-US/kb/future-of-pocket#w_when-is-pocket-shutting-down)
+
+... and will no longer be available after July 8, 2025.
+
+Therefore I switched to an open source alternative called [Readeck](https://readeck.org/).
+
+If you like my Pocket button FreshRSS extension and also switched to alternative I can recommend the eXtensions from [Joedmin](https://github.com/Joedmin) who forked and adjusted this plugin to work with [Readeck](https://github.com/Joedmin/xExtension-readeck-button) and [Wallabck](https://github.com/Joedmin/xExtension-wallabag-button).
+
+
 # FreshRSS Pocket Button
 
 A [FreshRSS](https://freshrss.org/) extension which adds a better [Pocket](https://getpocket.com/) sharing integration.
