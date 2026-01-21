@@ -1,31 +1,28 @@
 <?php
 
 return array(
-	'pocketButton' => array(
+	'instapaperButton' => array(
 		'configure' => array(
-			'consumer_key' => 'Verbraucher-Schlüssel',
-			'consumer_key_description' => '<ul class="pb_listedNumbers">
-				<li>Gehe zum <a href="https://getpocket.com/developer/apps/" target="_blank">Pocket Entwickler-Portal</a></li>
-				<li>Erstelle eine Applikation welche mindestens die \'Add\' Berechtigung beseitzt</li>
-				<li>Gebe deinen Verbraucher-Schlüssel (Consumer Key) ein und drücke auf "Mit Pocket verbinden"</li>
-			</ul>
-			<span>Weitere Details findest auf <a href="https://github.com/christian-putzke/freshrss-pocket-button" target="_blank">GitHub</a>!',
-			'connect_to_pocket' => 'Mit Pocket verbinden',
 			'username' => 'Benutzername',
-			'access_token' => 'Zugangs-Token',
+			'password' => 'Passwort',
+			'credentials_description' => '<ul class="ib_listedNumbers">
+				<li>Gebe deinen Instapaper Benutzernamen und Passwort ein</li>
+				<li>Du kannst deine normalen Instapaper Account-Daten verwenden</li>
+				<li>Für mehr Sicherheit, erwäge die Verwendung eines app-spezifischen Passworts, falls verfügbar</li>
+			</ul>
+			<span>Weitere Details findest du in der <a href="https://www.instapaper.com/api" target="_blank">Instapaper API Dokumentation</a>!',
+			'connect_to_instapaper' => 'Mit Instapaper verbinden',
 			'keyboard_shortcut' => 'Tastaturkürzel',
-			'extension_disabled' => 'Du must die Erweiterung aktivieren, bevor du dich mit Pocket verbinden kannst!',
-			'connected_to_pocket' => 'Du bist über den Account <b>%s</b> mit dem Zugangs-Token <b>%s</b> mit Pocket verbunden!',
-			'revoke_access' => 'Verbindung zu Pocket trennen!',
+			'extension_disabled' => 'Du musst die Erweiterung aktivieren, bevor du dich mit Instapaper verbinden kannst!',
+			'connected_to_instapaper' => 'Du bist über den Account <b>%s</b> mit Instapaper verbunden!',
+			'revoke_access' => 'Verbindung zu Instapaper trennen!',
 		),
 		'notifications' => array(
-			'added_article_to_pocket' => '<i>\'%s\'</i> erfolgreich zu Pocket hinzugefügt!',
-			'failed_to_add_article_to_pocket' => 'Fehler beim hinzufügen des Artikels! Pocket API Fehlercode: %s',
+			'added_article_to_instapaper' => '<i>\'%s\'</i> erfolgreich zu Instapaper hinzugefügt!',
+			'failed_to_add_article_to_instapaper' => 'Fehler beim hinzufügen des Artikels! HTTP Fehlercode: %s',
 			'ajax_request_failed' => 'Ajax-Anfrage fehlgeschlagen!',
-			'authorized_success' => 'Autorisierung erfolgreich!',
-			'authorized_aborted' => 'Autorisierung abgebrochen!',
-			'authorized_failed' => 'Autorisierung fehlgeschlagen! Pocket API Fehlercode: %s',
-			'request_access_failed' => 'Zugangsanfrage fehlgeschlagen! Pocket API Fehlercode: %s',
+			'credentials_required' => 'Benutzername und Passwort sind erforderlich!',
+			'credentials_saved' => 'Anmeldedaten erfolgreich gespeichert!',
 			'article_not_found' => 'Artikel konnte nicht gefunden werden!',
 			'authorization_revoked' => 'Autorisierung erfolgreich widerrufen!'
 		)

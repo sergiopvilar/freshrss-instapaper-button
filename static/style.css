@@ -1,36 +1,37 @@
-.notification.pb_good,
-.notification.pb_bad {
+.notification.ib_good,
+.notification.ib_bad {
     position: fixed;
     color: #fff;
     left: 20%;
     right: 20%;
 }
 
-.notification.pb_bad {
+.notification.ib_bad {
     background: #e74c3c;
 }
 
-.notification.pb_good {
+.notification.ib_good {
     background: #1abc9c;
 }
 
-input.pb_consumer_key {
+input.ib_username,
+input.ib_password {
     width: 300px;
 }
 
-input.pb_keyboard_shortcut {
+input.ib_keyboard_shortcut {
     width: 30px;
 }
 
-.pb_listedNumbers {
+.ib_listedNumbers {
     list-style-type: decimal;
 }
 
-.pb_disabled {
+.ib_disabled {
     display: none !important;
 }
 
-.pb_lds-dual-ring {
+.ib_lds-dual-ring {
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -39,7 +40,7 @@ input.pb_keyboard_shortcut {
     margin: -4px 0 0 -2px;
 }
 
-.pb_lds-dual-ring:after {
+.ib_lds-dual-ring:after {
     content: " ";
     display: block;
     width: 12px;
@@ -47,10 +48,10 @@ input.pb_keyboard_shortcut {
     border-radius: 50%;
     border: 2px solid #e74c3c;
     border-color: #e74c3c transparent #e74c3c transparent;
-    animation: pb_lds-dual-ring 1.2s linear infinite;
+    animation: ib_lds-dual-ring 1.2s linear infinite;
 }
 
-@keyframes pb_lds-dual-ring {
+@keyframes ib_lds-dual-ring {
     0% {
         transform: rotate(0deg);
     }

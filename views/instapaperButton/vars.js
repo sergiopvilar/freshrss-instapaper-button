@@ -1,0 +1,1 @@
+var instapaper_button_vars = <?= $this->instapaper_button_vars ?>;

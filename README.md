@@ -1,35 +1,23 @@
-# [Pocket is shutting down ...](https://support.mozilla.org/en-US/kb/future-of-pocket#w_when-is-pocket-shutting-down)
+# FreshRSS Instapaper Button
 
-... and will no longer be available after July 8, 2025.
+A [FreshRSS](https://freshrss.org/) extension which adds a better [Instapaper](https://www.instapaper.com/) sharing integration.
 
-Therefore I switched to an open source alternative called [Readeck](https://readeck.org/).
+The existing Instapaper sharing functionality of FreshRSS always opens a new tab which you have to manually close after sharing. You also have to stay logged in into Instapaper.
 
-If you like my Pocket button FreshRSS extension and also switched to alternative I can recommend the eXtensions from [Joedmin](https://github.com/Joedmin) who forked and adjusted this plugin to work with [Readeck](https://github.com/Joedmin/xExtension-readeck-button) and [Wallabck](https://github.com/Joedmin/xExtension-wallabag-button).
-
-
-# FreshRSS Pocket Button
-
-A [FreshRSS](https://freshrss.org/) extension which adds a better [Pocket](https://getpocket.com/) sharing integration.
-
-The existing Pocket sharing functionality of FreshRSS always opens a new tab which you have to manually close after sharing. You also have to stay logged in into Pocket.
-
-With this extension you can simply press the Pocket Button next to an article or a custom keyboard shortcut to share it with Pocket. Everything else happens in the background while you can continue reading articles without any further interruptions.
+With this extension you can simply press the Instapaper Button next to an article or a custom keyboard shortcut to share it with Instapaper. Everything else happens in the background while you can continue reading articles without any further interruptions.
 
 ## Download and setup
 
-1. Download the [latest release](https://github.com/christian-putzke/freshrss-pocket-button/releases)
+1. Download or clone this repository
 1. Extract and upload it to the `./extensions` folder of your FreshRSS installation
-1. Go to [Pocket's Developer Portal](https://getpocket.com/developer/apps/)
-1. Create a new application with at least the `add` permission
-1. Enter your Consumer Key in the Pocket Button extension settings
-1. Press "Connect to Pocket"
-1. Authorize your just created application
-1. *Optional Set a custom keyboard shortcut*
+1. Go to the Instapaper Button extension settings
+1. Enter your Instapaper username and password
+1. Press "Connect to Instapaper"
+1. *Optional: Set a custom keyboard shortcut*
 
-## Pocket API Error codes
+## Instapaper API
 
-If you get errors while trying to connect to Pocket, please check the [Pocket developer documentation](https://getpocket.com/developer/docs/authentication) for detailed error code descriptions.
-
+This extension uses the [Instapaper API](https://www.instapaper.com/api) with HTTP Basic Authentication. You can use your regular Instapaper account credentials. For better security, consider using an app-specific password if available.
 
 ## Translations
 

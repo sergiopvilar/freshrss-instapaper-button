@@ -1,14 +1,14 @@
 <?php
 
-class PocketButtonExtension extends Minz_Extension {
+class InstapaperButtonExtension extends Minz_Extension {
 	public function init() {
 		$this->registerTranslates();
 
 		Minz_View::appendScript($this->getFileUrl('script.js', 'js'), false, false, false);
 		Minz_View::appendStyle($this->getFileUrl('style.css', 'css'));
-		Minz_View::appendScript(_url('pocketButton', 'jsVars'), false, true, false);
+		Minz_View::appendScript(_url('instapaperButton', 'jsVars'), false, true, false);
 
-		$this->registerController('pocketButton');
+		$this->registerController('instapaperButton');
 		$this->registerViews();
 	}
 
@@ -17,17 +17,17 @@ class PocketButtonExtension extends Minz_Extension {
 		
 		if (Minz_Request::isPost()) {
 			$keyboard_shortcut = Minz_Request::param('keyboard_shortcut', '');
-			FreshRSS_Context::$user_conf->pocket_keyboard_shortcut = $keyboard_shortcut;
+			FreshRSS_Context::$user_conf->instapaper_keyboard_shortcut = $keyboard_shortcut;
 			FreshRSS_Context::$user_conf->save();
 		}
 	}
 
 	public function isConfigured() {
-		if (FreshRSS_Context::$user_conf->pocket_access_token == '') {
+		if (FreshRSS_Context::$user_conf->instapaper_username == '') {
 			return false;
 		}
 
-		if (FreshRSS_Context::$user_conf->pocket_consumer_key == '') {
+		if (FreshRSS_Context::$user_conf->instapaper_password == '') {
 			return false;
 		}
 
